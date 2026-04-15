@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm install && pnpm --filter @workspace/bot-dashboard run build",
+  "outputDirectory": "artifacts/bot-dashboard/dist/public",
+  "framework": null,
+  "functions": {
+    "api/webhook.py": {
+      "runtime": "python3.12"
+    },
+    "api/users.py": {
+      "runtime": "python3.12"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/webhook",
+      "dest": "/api/webhook.py"
+    },
+    {
+      "src": "/api/users",
+      "dest": "/api/users.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "BASE_PATH": "/"
+  }
+}
