@@ -1,5 +1,6 @@
 import os
 import json
+import asyncio
 import threading
 from datetime import datetime
 from telegram import Update, constants
@@ -58,4 +59,5 @@ async def track_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.ALL, track_message))
-app.run_polling()
+
+app.run_polling(drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
