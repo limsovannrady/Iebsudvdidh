@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "pnpm install && pnpm --filter @workspace/bot-dashboard run build",
-  "outputDirectory": "artifacts/bot-dashboard/dist/public",
+  "outputDirectory": "artifacts/bot-dashboard/dist",
   "framework": null,
   "functions": {
     "api/webhook.py": {
