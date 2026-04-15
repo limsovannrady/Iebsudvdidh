@@ -1,0 +1,29 @@
+{
+  "123456789": {
+    "user_id": 123456789,
+    "username": "sokha_test",
+    "first_name": "សុខា",
+    "last_name": "ចន្ទ",
+    "message_count": 15,
+    "first_seen": "2026-04-10T08:30:00",
+    "last_seen": "2026-04-15T17:00:00"
+  },
+  "987654321": {
+    "user_id": 987654321,
+    "username": "dara_user",
+    "first_name": "ដារ៉ា",
+    "last_name": "សុខ",
+    "message_count": 7,
+    "first_seen": "2026-04-12T14:00:00",
+    "last_seen": "2026-04-15T16:45:00"
+  },
+  "555000111": {
+    "user_id": 555000111,
+    "username": "",
+    "first_name": "Sophea",
+    "last_name": "Lim",
+    "message_count": 3,
+    "first_seen": "2026-04-14T09:00:00",
+    "last_seen": "2026-04-15T10:20:00"
+  }
+}
